@@ -11,6 +11,10 @@ h4 {
     font-size: 1.25em;
 }
 
+.disabled {
+    display: none;
+}
+
 a:link {
     text-decoration: none;
 }
