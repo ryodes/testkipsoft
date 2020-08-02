@@ -7,6 +7,7 @@ $(document).ready(function() {
 
         //  Supprimer les potentiels précédentes recherches
         $(".panel").remove();
+        $(".page-item").remove();
 
             //  Recupere le nom saisi dans l'input.
         var textInput = $("#nom").val();
@@ -31,6 +32,9 @@ $(document).ready(function() {
                                                 "</li>" +
                                             "</a>");
                     }
+                    for (let i=0; i<result["total_pages"]; i++) {
+                        $(".pagination").append("<li class='page-item'><a class='page-link' href='#'>" + (i+1) + "</a></li>");
+                    }
                 }
             });
         }
@@ -49,3 +53,4 @@ function modal(id){
     $("#modal-nature_juridique_entreprise").text(stock['etablissement'][id]['nature_juridique_entreprise']);
     $("#modal-nature_juridique_entreprise").append(" - " + stock['etablissement'][id]['libelle_nature_juridique_entreprise']);
 }
+
