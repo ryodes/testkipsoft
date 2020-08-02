@@ -36,3 +36,15 @@ $(document).ready(function() {
         }
     })
 });
+
+function modal(id){
+    console.log(id);
+    console.log(stock['etablissement'][id]['siret']);
+    console.log(stock['etablissement'][id]['siren']);
+    console.log(stock['etablissement'][id]['nic']);
+    console.log(stock['etablissement'][id]['activite_principale']);
+    console.log(stock['etablissement'][id]['libelle_activite_principale']);
+    console.log(stock['etablissement'][id]['nature_juridique_entreprise']);
+    console.log(stock['etablissement'][id]['libelle_nature_juridique_entreprise']);
+    console.log(stock['etablissement'][id]['numero_rna']);
+}
