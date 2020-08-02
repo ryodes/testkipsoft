@@ -5,6 +5,9 @@ $(document).ready(function() {
             //  rajoute la class "disabled" au h4 afin d'enlever "Aucun résultat trouvé."
         $("#notfound").addClass("disabled");
 
+        //  Supprimer les potentiels précédentes recherches
+        $(".panel").remove();
+
             //  Recupere le nom saisi dans l'input.
         var textInput = $("#nom").val();
 
