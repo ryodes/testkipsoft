@@ -8,7 +8,12 @@ h1{
 }
 
 h4 {
-    font-size: 1.25em;
+    font-size: 1.50em;
+}
+
+h5 {
+    font-size: 1em;
+    color: #53657d;
 }
 
 .disabled {

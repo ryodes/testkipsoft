@@ -37,14 +37,15 @@ $(document).ready(function() {
     })
 });
 
+    //  fonction qui modifie la modal en fonction du panel choisi
 function modal(id){
-    console.log(id);
-    console.log(stock['etablissement'][id]['siret']);
-    console.log(stock['etablissement'][id]['siren']);
-    console.log(stock['etablissement'][id]['nic']);
-    console.log(stock['etablissement'][id]['activite_principale']);
-    console.log(stock['etablissement'][id]['libelle_activite_principale']);
-    console.log(stock['etablissement'][id]['nature_juridique_entreprise']);
-    console.log(stock['etablissement'][id]['libelle_nature_juridique_entreprise']);
-    console.log(stock['etablissement'][id]['numero_rna']);
+    $("#modal-title").text(stock['etablissement'][id]['l1_normalisee']);
+    $("#modal-siren").text("(" + stock['etablissement'][id]['siren'] + ")");
+    $("#modal-ville").text(stock['etablissement'][id]['l6_normalisee']);
+    $("#modal-siret").text(stock['etablissement'][id]['siret']);
+    $("#modal-nic").text(stock['etablissement'][id]['nic']);
+    $("#modal-activite_principale").text(stock['etablissement'][id]['activite_principale']);
+    $("#modal-activite_principale").append(" - " + stock['etablissement'][id]['libelle_activite_principale']);
+    $("#modal-nature_juridique_entreprise").text(stock['etablissement'][id]['nature_juridique_entreprise']);
+    $("#modal-nature_juridique_entreprise").append(" - " + stock['etablissement'][id]['libelle_nature_juridique_entreprise']);
 }
