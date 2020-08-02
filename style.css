@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(235, 239, 243);
+
+}
+
+h1{
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
